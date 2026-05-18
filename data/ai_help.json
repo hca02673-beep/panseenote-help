@@ -1,0 +1,26 @@
+﻿[
+  {
+    "target_type": "LEAF",
+    "target_id": "L_CMN_MPER_AI",
+    "button_label": "≪（マイク）解決方法をＡＩで調べる≫",
+    "base_query": "パンセノート Webアプリ マイク 使用許可 音声認識 できない",
+    "choice_title": "お使いの端末・ブラウザを選んでください",
+    "choices": ["iPhone / iPad Safari", "Android Chrome", "Windows Chrome", "Windows Edge", "ホーム画面に追加したアプリ"],
+    "free_text_label": "困っている状況を追加できます",
+    "free_text_placeholder": "例：マイクの許可画面が出ない／マイクを許可したのに反応しない／ホーム画面アプリでは音声認識できない",
+    "search_template": "パンセノート マイク 使用許可 音声認識 できない {choice} {free_text}",
+    "note": "マイク権限・ブラウザ設定・端末別確認用"
+  },
+  {
+    "target_type": "LEAF",
+    "target_id": "L_INSTALL_AI",
+    "button_label": "≪（アプリ化）解決方法をＡＩで調べる≫",
+    "base_query": "パンセノート Webアプリ ホーム画面に追加 インストール アプリ化 できない",
+    "choice_title": "お使いの端末・ブラウザを選んでください",
+    "choices": ["iPhone / iPad Safari", "Android Chrome", "Windows Chrome", "Windows Edge", "その他のブラウザ"],
+    "free_text_label": "困っている状況を追加できます",
+    "free_text_placeholder": "例：ホーム画面に追加が表示されない／インストールボタンが出ない／アドレスから開くとアプリが立ち上がる",
+    "search_template": "パンセノート ホーム画面に追加 インストール アプリ化 できない {choice} {free_text}",
+    "note": "PWA・ホーム画面追加・アプリ化の端末別確認用"
+  }
+]
