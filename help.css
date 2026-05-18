@@ -10,11 +10,20 @@
   --accent: #2f6fec;
   --accent-hover: #245ed0;
   --accent-soft: #eef4ff;
-  --warning-bg: #fff8d9;
-  --warning-border: #e7cf6d;
-  --warning-text: #554400;
   --shadow: 0 12px 36px rgba(16, 24, 40, 0.08);
   --radius: 16px;
+  --layer-1-bg: #f1f8ff;
+  --layer-1-border: #b8d8f2;
+  --layer-2-bg: #f3fbf4;
+  --layer-2-border: #b9dfc0;
+  --layer-3-bg: #fff8e8;
+  --layer-3-border: #e7c97c;
+  --layer-4-bg: #ffffe1;
+  --layer-4-border: #ebea69;
+  --layer-5-bg: #f3eeff;
+  --layer-5-border: #b89be8;
+  --layer-6-bg: #ffffff;
+  --layer-6-border: #d6d6d6;
 }
 
 * {
@@ -152,7 +161,6 @@ a {
 }
 
 .message-card,
-.branch-children,
 .leaf-card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -201,27 +209,21 @@ a {
   align-items: center;
   gap: 0.8rem;
   padding: 0.95rem 1rem;
-  border: 1px solid var(--border-strong);
+  border: 1px solid var(--item-border, var(--border-strong));
   border-radius: 14px;
-  background: var(--surface);
+  background: var(--item-bg, var(--surface));
   color: var(--text);
   text-align: left;
   box-shadow: var(--shadow);
+  transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
 }
 
 .branch-toggle:hover {
-  background: var(--accent-soft);
+  transform: translateY(-1px);
 }
 
 .branch-toggle.is-open {
-  border-color: #97b5f5;
-  background: #f7faff;
-}
-
-.branch-toggle-warning {
-  background: var(--warning-bg);
-  border-color: var(--warning-border);
-  color: var(--warning-text);
+  box-shadow: 0 14px 30px rgba(16, 24, 40, 0.1);
 }
 
 .branch-label {
@@ -248,20 +250,16 @@ a {
 }
 
 .branch-children {
-  padding: 0.85rem;
+  padding: 0 0 0 0.85rem;
   display: grid;
   gap: 0.75rem;
+  border-left: 2px solid rgba(184, 196, 215, 0.7);
 }
 
 .leaf-card {
   padding: 0.95rem;
-  background: var(--surface-subtle);
-}
-
-.leaf-card-warning {
-  background: var(--warning-bg);
-  border-color: var(--warning-border);
-  color: var(--warning-text);
+  background: var(--item-bg, var(--surface-subtle));
+  border-color: var(--item-border, var(--border));
 }
 
 .leaf-title {
@@ -276,6 +274,36 @@ a {
   color: var(--muted);
   font-size: 0.85rem;
   line-height: 1.5;
+}
+
+.layer-surface-1 {
+  --item-bg: var(--layer-1-bg);
+  --item-border: var(--layer-1-border);
+}
+
+.layer-surface-2 {
+  --item-bg: var(--layer-2-bg);
+  --item-border: var(--layer-2-border);
+}
+
+.layer-surface-3 {
+  --item-bg: var(--layer-3-bg);
+  --item-border: var(--layer-3-border);
+}
+
+.layer-surface-4 {
+  --item-bg: var(--layer-4-bg);
+  --item-border: var(--layer-4-border);
+}
+
+.layer-surface-5 {
+  --item-bg: var(--layer-5-bg);
+  --item-border: var(--layer-5-border);
+}
+
+.layer-surface-6 {
+  --item-bg: var(--layer-6-bg);
+  --item-border: var(--layer-6-border);
 }
 
 .leaf-body {

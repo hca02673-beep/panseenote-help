@@ -238,7 +238,7 @@
 
     els.helpTree.innerHTML = "";
 
-    var result = renderBranchChildren("ROOT", "ROOT", [], false, new Set());
+    var result = renderBranchChildren("ROOT", "ROOT", [], false, new Set(), 1);
     if (!result.hasContent) {
       var emptyNode = document.createElement("div");
       emptyNode.className = "empty-search";
@@ -252,7 +252,7 @@
     els.helpTree.appendChild(result.fragment);
   }
 
-  function renderBranchChildren(branchId, pathKey, ancestorBranchIds, forceShowAll, searchTrail) {
+  function renderBranchChildren(branchId, pathKey, ancestorBranchIds, forceShowAll, searchTrail, depth) {
     var fragment = document.createDocumentFragment();
     var group = document.createElement("div");
     group.className = "tree-group";
@@ -263,7 +263,14 @@
 
     for (var i = 0; i < rows.length; i++) {
       var row = rows[i];
-      var rendered = renderRow(row, pathKey + ">" + row._rowKey, branchAncestors, forceShowAll, nextSearchTrail);
+      var rendered = renderRow(
+        row,
+        pathKey + ">" + row._rowKey,
+        branchAncestors,
+        forceShowAll,
+        nextSearchTrail,
+        depth
+      );
       if (!rendered) continue;
       hasContent = true;
       group.appendChild(rendered);
@@ -279,17 +286,17 @@
     };
   }
 
-  function renderRow(row, pathKey, ancestorBranchIds, forceShowAll, searchTrail) {
+  function renderRow(row, pathKey, ancestorBranchIds, forceShowAll, searchTrail, depth) {
     if (row.child_type === "LEAF") {
-      return renderLeafRow(row, forceShowAll);
+      return renderLeafRow(row, forceShowAll, depth);
     }
     if (row.child_type === "BRANCH") {
-      return renderBranchRow(row, pathKey, ancestorBranchIds, forceShowAll, searchTrail);
+      return renderBranchRow(row, pathKey, ancestorBranchIds, forceShowAll, searchTrail, depth);
     }
     return null;
   }
 
-  function renderLeafRow(row, forceShowAll) {
+  function renderLeafRow(row, forceShowAll, depth) {
     var leaf = state.leafById.get(row.child_id);
     if (!leaf) return null;
 
@@ -298,10 +305,7 @@
     if (!directMatch) return null;
 
     var wrapper = document.createElement("article");
-    wrapper.className = "leaf-card";
-    if (isWarningRow(row)) {
-      wrapper.classList.add("leaf-card-warning");
-    }
+    wrapper.className = "leaf-card " + getLayerClassName(depth);
 
     var leafTitle = leaf.leaf_title || row.display_title;
     if (leafTitle) {
@@ -338,7 +342,7 @@
     return wrapper;
   }
 
-  function renderBranchRow(row, pathKey, ancestorBranchIds, forceShowAll, searchTrail) {
+  function renderBranchRow(row, pathKey, ancestorBranchIds, forceShowAll, searchTrail, depth) {
     var branchId = row.child_id;
     if (!branchId) return null;
 
@@ -358,10 +362,7 @@
 
     var button = document.createElement("button");
     button.type = "button";
-    button.className = "branch-toggle" + (open ? " is-open" : "");
-    if (isWarningRow(row)) {
-      button.classList.add("branch-toggle-warning");
-    }
+    button.className = "branch-toggle " + getLayerClassName(depth) + (open ? " is-open" : "");
     button.setAttribute("aria-expanded", open ? "true" : "false");
 
     var labelWrap = document.createElement("span");
@@ -409,7 +410,8 @@
       pathKey,
       ancestorBranchIds.concat(branchId),
       forceShowAll || selfMatch,
-      searchTrail
+      searchTrail,
+      depth + 1
     );
 
     if (childrenResult.hasContent) {
@@ -487,8 +489,15 @@
     return state.branchTitleById.get(branchId) || branchId;
   }
 
-  function isWarningRow(row) {
-    return row && String(row.body_format || "").toLowerCase() === "warning";
+  function getLayerClassName(depth) {
+    return "layer-surface-" + getLayerDepth(depth);
+  }
+
+  function getLayerDepth(depth) {
+    var num = Number(depth);
+    if (!Number.isFinite(num) || num < 1) return 1;
+    if (num > 6) return 6;
+    return Math.floor(num);
   }
 
   function getAiHelp(targetType, targetId) {
