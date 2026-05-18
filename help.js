@@ -222,14 +222,24 @@
   }
 
   function updateSearchUi() {
+    updateSearchUiWithCount(null);
+  }
+
+  function updateSearchUiWithCount(matchCount) {
     var hasTerm = !!state.searchTerm;
     if (els.searchClear) {
       els.searchClear.hidden = !hasTerm;
     }
     if (els.searchStatus) {
-      els.searchStatus.textContent = hasTerm
-        ? "検索中です。該当箇所の親項目を自動展開しています。"
-        : "見出しや本文を検索できます。";
+      if (!hasTerm) {
+        els.searchStatus.textContent = "見出しや本文を検索できます。";
+      } else if (typeof matchCount === "number") {
+        els.searchStatus.textContent = matchCount > 0
+          ? formatCount(matchCount) + "件をハイライト表示しています。"
+          : "該当ありません。クリアボタンを押して下さい。";
+      } else {
+        els.searchStatus.textContent = "検索中です。";
+      }
     }
   }
 
@@ -239,6 +249,7 @@
     els.helpTree.innerHTML = "";
 
     var result = renderBranchChildren("ROOT", "ROOT", [], false, new Set(), 1);
+    updateSearchUiWithCount(result.matchCount);
     if (!result.hasContent) {
       var emptyNode = document.createElement("div");
       emptyNode.className = "empty-search";
@@ -258,6 +269,7 @@
     group.className = "tree-group";
     var rows = state.branchRowsByParent.get(branchId) || [];
     var hasContent = false;
+    var matchCount = 0;
     var branchAncestors = Array.isArray(ancestorBranchIds) ? ancestorBranchIds : [];
     var nextSearchTrail = searchTrail instanceof Set ? searchTrail : new Set();
 
@@ -273,7 +285,8 @@
       );
       if (!rendered) continue;
       hasContent = true;
-      group.appendChild(rendered);
+      group.appendChild(rendered.node);
+      matchCount += rendered.matchCount;
     }
 
     if (hasContent) {
@@ -283,6 +296,7 @@
     return {
       fragment: fragment,
       hasContent: hasContent,
+      matchCount: matchCount,
     };
   }
 
@@ -303,6 +317,7 @@
     var query = state.searchTerm;
     var directMatch = forceShowAll || !query || leafMatchesRow(row, leaf, query);
     if (!directMatch) return null;
+    var matchCount = query && leafMatchesRow(row, leaf, query) ? 1 : 0;
 
     var wrapper = document.createElement("article");
     wrapper.className = "leaf-card " + getLayerClassName(depth);
@@ -339,7 +354,10 @@
       wrapper.appendChild(createAiHelpButton(aiHelp));
     }
 
-    return wrapper;
+    return {
+      node: wrapper,
+      matchCount: matchCount,
+    };
   }
 
   function renderBranchRow(row, pathKey, ancestorBranchIds, forceShowAll, searchTrail, depth) {
@@ -355,6 +373,7 @@
     var descendants = analyzeBranchDescendants(branchId, ancestorBranchIds.concat(branchId), searchTrail);
     var shouldInclude = forceShowAll || !query || selfMatch || descendants.hasMatch;
     if (!shouldInclude) return null;
+    var matchCount = query && branchMatchesRow(row, query) ? 1 : 0;
 
     var open = query ? true : state.manualOpenPaths.has(pathKey);
     var wrapper = document.createElement("section");
@@ -417,13 +436,17 @@
     if (childrenResult.hasContent) {
       wrapper.appendChild(childrenResult.fragment);
     }
+    matchCount += childrenResult.matchCount;
 
     var aiHelp = getAiHelp("BRANCH", branchId);
     if (aiHelp) {
       wrapper.appendChild(createAiHelpButton(aiHelp));
     }
 
-    return wrapper;
+    return {
+      node: wrapper,
+      matchCount: matchCount,
+    };
   }
 
   function analyzeBranchDescendants(branchId, ancestorBranchIds, searchTrail) {
@@ -498,6 +521,12 @@
     if (!Number.isFinite(num) || num < 1) return 1;
     if (num > 6) return 6;
     return Math.floor(num);
+  }
+
+  function formatCount(value) {
+    var num = Number(value || 0);
+    if (!Number.isFinite(num) || num < 0) return "0";
+    return String(Math.floor(num));
   }
 
   function getAiHelp(targetType, targetId) {
