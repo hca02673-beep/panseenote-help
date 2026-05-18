@@ -421,7 +421,10 @@
     wrapper.appendChild(button);
 
     if (!open) {
-      return wrapper;
+      return {
+        node: wrapper,
+        matchCount: matchCount,
+      };
     }
 
     var childrenResult = renderBranchChildren(
