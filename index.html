@@ -5,9 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>パンセノート ヘルプ</title>
   <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="./help.css">
 </head>
 <body>
-  <h1>パンセノート ヘルプ</h1>
-  <p>このページは、パンセノートのヘルプページ暫定版です。</p>
+  <!-- ローカルで確認する場合は file:// では fetch が失敗することがあります。VSCode Live Server 等の簡易サーバー利用を想定しています。 -->
+  <div class="page-shell">
+    <header class="page-header">
+      <div class="page-header-inner">
+        <p class="page-eyebrow">Online Help</p>
+        <h1 class="page-title">パンセノート ヘルプ</h1>
+        <form class="search-form" role="search" novalidate>
+          <label class="search-label" for="help-search-input">ヘルプ内検索</label>
+          <div class="search-row">
+            <input
+              id="help-search-input"
+              class="search-input"
+              type="search"
+              inputmode="search"
+              autocomplete="off"
+              placeholder="知りたい言葉を入力"
+            >
+            <button id="help-search-clear" class="search-clear" type="button" hidden>クリア</button>
+          </div>
+          <p id="search-status" class="search-status">見出しや本文を検索できます。</p>
+        </form>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section id="loading-state" class="message-card">
+        <p class="message-title">読み込み中です</p>
+        <p class="message-body">ヘルプデータを取得しています。</p>
+      </section>
+
+      <section id="error-state" class="message-card message-card-error" hidden>
+        <p class="message-title">ヘルプを読み込めませんでした</p>
+        <p id="error-message" class="message-body"></p>
+      </section>
+
+      <section id="help-tree" class="help-tree" aria-live="polite" hidden></section>
+    </main>
+  </div>
+
+  <div id="ai-help-modal" class="modal-overlay" hidden aria-modal="true" role="dialog" aria-labelledby="ai-help-title">
+    <div class="modal-card" role="document">
+      <div class="modal-header">
+        <h2 id="ai-help-title" class="modal-title">AIで調べる</h2>
+        <button id="ai-help-close" class="modal-close" type="button" aria-label="閉じる">×</button>
+      </div>
+      <div class="modal-body">
+        <p id="ai-help-choice-title" class="modal-lead"></p>
+        <div id="ai-help-choices" class="choice-list"></div>
+        <label class="free-text-block" for="ai-help-free-text">
+          <span id="ai-help-free-text-label" class="free-text-label"></span>
+          <textarea id="ai-help-free-text" class="free-text-input" rows="4"></textarea>
+        </label>
+      </div>
+      <div class="modal-actions">
+        <button id="ai-help-search" class="primary-button" type="button">Googleで検索</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./help.js" defer></script>
 </body>
 </html>
