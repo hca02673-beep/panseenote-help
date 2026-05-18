@@ -2,7 +2,7 @@
   {
     "target_type": "LEAF",
     "target_id": "L_CMN_MPER_AI",
-    "button_label": "≪（マイク）解決方法をＡＩで調べる≫",
+    "button_label": "解決方法をＡＩで調べる",
     "base_query": "パンセノート Webアプリ マイク 使用許可 音声認識 できない",
     "choice_title": "お使いの端末・ブラウザを選んでください",
     "choices": ["iPhone / iPad Safari", "Android Chrome", "Windows Chrome", "Windows Edge", "ホーム画面に追加したアプリ"],
@@ -14,7 +14,7 @@
   {
     "target_type": "LEAF",
     "target_id": "L_INSTALL_AI",
-    "button_label": "≪（アプリ化）解決方法をＡＩで調べる≫",
+    "button_label": "解決方法をＡＩで調べる",
     "base_query": "パンセノート Webアプリ ホーム画面に追加 インストール アプリ化 できない",
     "choice_title": "お使いの端末・ブラウザを選んでください",
     "choices": ["iPhone / iPad Safari", "Android Chrome", "Windows Chrome", "Windows Edge", "その他のブラウザ"],
