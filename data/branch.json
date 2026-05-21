@@ -130,22 +130,12 @@
     "referenced_branch_ids": ["B_FIRST_GUIDE", "B_IDPW_INDEX", "B_FEATURE_VOICE_REGISTER", "B_MAIN_RESTORE", "B_MAIN_SAVE", "B_MSG_IMPORT_FILE", "B_MSG_UNSAVED", "B_NOTE_STORAGE"]
   },
   {
-    "branch_id": "B_IDPW_INDEX",
-    "branch_title": "≪個人情報・重要情報の漏洩・消失の可能性につきまして≫",
-    "child_order": null,
-    "child_type": "BRANCH",
-    "child_id": "B_IDPW_CAUTION",
-    "display_title": "個人情報・重要情報の漏洩・消失の可能性につきまして",
-    "body_format": "warning",
-    "referenced_branch_ids": ["B_FIRST_GUIDE", "B_IDPW_INDEX", "B_FEATURE_VOICE_REGISTER", "B_MAIN_RESTORE", "B_MAIN_SAVE", "B_MSG_IMPORT_FILE", "B_MSG_UNSAVED", "B_NOTE_STORAGE"]
-  },
-  {
     "branch_id": "B_IDPW_CAUTION",
     "branch_title": "個人情報・重要情報の漏洩・消失の可能性につきまして",
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_COMMON_SECURITY_WARNING",
-    "display_title": "・パンセノートでお客様が登録さ,,,",
+    "display_title": "・パンセノートには、ID、パス,,,",
     "body_format": "warning",
     "referenced_branch_ids": ["B_IDPW_CAUTION", "B_FAQ_STORAGE", "B_MSG_IMPORTANT", "B_MSG_ROW_TAP"]
   },
@@ -215,9 +205,19 @@
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_IDPW_INDEX_01",
-    "display_title": "▶ ID・パスワードはあなたの,,,",
+    "display_title": "・ ID・パスワードはあなたの,,,",
     "body_format": "normal",
     "referenced_branch_ids": ["B_IDPW_INDEX"]
+  },
+  {
+    "branch_id": "B_IDPW_INDEX",
+    "branch_title": "≪個人情報・重要情報の漏洩・消失の可能性につきまして≫",
+    "child_order": null,
+    "child_type": "BRANCH",
+    "child_id": "B_IDPW_CAUTION",
+    "display_title": "個人情報・重要情報の漏洩・消失の可能性につきまして",
+    "body_format": "warning",
+    "referenced_branch_ids": ["B_FIRST_GUIDE", "B_IDPW_INDEX", "B_FEATURE_VOICE_REGISTER", "B_MAIN_RESTORE", "B_MAIN_SAVE", "B_MSG_IMPORT_FILE", "B_MSG_UNSAVED", "B_NOTE_STORAGE"]
   },
   {
     "branch_id": "B_USE_CASUAL",
@@ -235,7 +235,7 @@
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_MANUAL_INDEX_01",
-    "display_title": "▶ AIの登場によって、モノの,,,",
+    "display_title": "・ AIの登場によって、モノの,,,",
     "body_format": "normal",
     "referenced_branch_ids": ["B_MANUAL_INDEX"]
   },
@@ -255,7 +255,7 @@
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_MOMENT_MEMO_01",
-    "display_title": "▶ 雑誌で見かけたレシピ、SN,,,",
+    "display_title": "・ 雑誌で見かけたレシピ、SN,,,",
     "body_format": "normal",
     "referenced_branch_ids": ["B_MOMENT_MEMO"]
   },
@@ -295,7 +295,7 @@
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_FEATURE_PHOTO_01",
-    "display_title": "・写真の登録は、新規にデータを,,,",
+    "display_title": "・音声登録（または手動）した時,,,",
     "body_format": "normal",
     "referenced_branch_ids": ["B_FEATURE_PHOTO", "B_PHOTO_CAUTION"]
   },
@@ -355,7 +355,7 @@
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_FEATURE_LICENSE_01",
-    "display_title": "・ランクアップを行うと、新しい,,,",
+    "display_title": "・プランアップを行うと、新しい,,,",
     "body_format": "normal",
     "referenced_branch_ids": ["B_FEATURE_LICENSE"]
   },
@@ -365,7 +365,7 @@
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_BACKUP_SAVE_01",
-    "display_title": "【基本のデータファイル保存（バ,,,",
+    "display_title": "1. データファイル保存ボタン,,,",
     "body_format": "normal",
     "referenced_branch_ids": ["B_BACKUP"]
   },
@@ -375,7 +375,7 @@
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_BACKUP_RESTORE_01",
-    "display_title": "【基本のデータファイル読み出し,,,",
+    "display_title": "1. データファイル読み出しボ,,,",
     "body_format": "normal",
     "referenced_branch_ids": ["B_BACKUP"]
   },
@@ -385,7 +385,7 @@
     "child_order": null,
     "child_type": "BRANCH",
     "child_id": "B_BACKUP_CAUTION",
-    "display_title": "データファイル保存・読み出しの注意点",
+    "display_title": "データファイル保存・読出しの注意点",
     "body_format": "normal",
     "referenced_branch_ids": ["B_BACKUP"]
   },
@@ -631,7 +631,7 @@
   },
   {
     "branch_id": "B_BACKUP_CAUTION",
-    "branch_title": "データファイル保存・読み出しの注意点",
+    "branch_title": "",
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_FEATURE_SAVE_01",
@@ -641,7 +641,7 @@
   },
   {
     "branch_id": "B_BACKUP_CAUTION",
-    "branch_title": "データファイル保存・読み出しの注意点",
+    "branch_title": "",
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_FEATURE_RESTORE_01",
@@ -651,7 +651,7 @@
   },
   {
     "branch_id": "B_BACKUP_CAUTION",
-    "branch_title": "データファイル保存・読み出しの注意点",
+    "branch_title": "",
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_STORAGE_01",
@@ -705,7 +705,7 @@
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_ENV_01",
-    "display_title": "パンセノートは次の環境でのご利,,,",
+    "display_title": "パンセノートは、次の環境でのご,,,",
     "body_format": "normal",
     "referenced_branch_ids": ["B_ENV"]
   },
@@ -725,7 +725,7 @@
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_COMMON_SECURITY_WARNING",
-    "display_title": "・パンセノートでお客様が登録さ,,,",
+    "display_title": "・パンセノートには、ID、パス,,,",
     "body_format": "normal",
     "referenced_branch_ids": ["B_IDPW_CAUTION", "B_FAQ_STORAGE", "B_MSG_IMPORTANT", "B_MSG_ROW_TAP"]
   },
@@ -745,7 +745,7 @@
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_COMMON_MIC_PERMISSION",
-    "display_title": "・ブラウザでマイクを使うには、,,,",
+    "display_title": "・パンセノートはWebサイト上,,,",
     "body_format": "normal",
     "referenced_branch_ids": ["B_COMMON_MIC_PERMISSION", "B_FAQ_VOICE", "B_MAIN_VOICE_REGISTER", "B_MAIN_VOICE_SEARCH"]
   },
@@ -766,6 +766,16 @@
     "child_type": "BRANCH",
     "child_id": "B_CMN_MPER_ADR",
     "display_title": "・Android端末の Chrome の場合",
+    "body_format": "normal",
+    "referenced_branch_ids": ["B_COMMON_MIC_PERMISSION", "B_FAQ_VOICE"]
+  },
+  {
+    "branch_id": "B_COMMON_MIC_PERMISSION",
+    "branch_title": "ブラウザに対するマイクの使用許可",
+    "child_order": null,
+    "child_type": "BRANCH",
+    "child_id": "B_CMN_MPER_MAC",
+    "display_title": "・Mac（マッキントッシュ）の場合",
     "body_format": "normal",
     "referenced_branch_ids": ["B_COMMON_MIC_PERMISSION", "B_FAQ_VOICE"]
   },
@@ -795,7 +805,7 @@
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_COMMON_MIC_PERMISSION",
-    "display_title": "・ブラウザでマイクを使うには、,,,",
+    "display_title": "・パンセノートはWebサイト上,,,",
     "body_format": "normal",
     "referenced_branch_ids": ["B_COMMON_MIC_PERMISSION", "B_FAQ_VOICE", "B_MAIN_VOICE_REGISTER", "B_MAIN_VOICE_SEARCH"]
   },
@@ -824,6 +834,16 @@
     "branch_title": "音声認識（マイクの使用許可）",
     "child_order": null,
     "child_type": "BRANCH",
+    "child_id": "B_CMN_MPER_MAC",
+    "display_title": "・Mac（マッキントッシュ）の場合",
+    "body_format": "normal",
+    "referenced_branch_ids": ["B_COMMON_MIC_PERMISSION", "B_FAQ_VOICE"]
+  },
+  {
+    "branch_id": "B_FAQ_VOICE",
+    "branch_title": "音声認識（マイクの使用許可）",
+    "child_order": null,
+    "child_type": "BRANCH",
     "child_id": "B_CMN_MPER_WIN",
     "display_title": "Windows端末の Chrome / Edge",
     "body_format": "normal",
@@ -841,7 +861,7 @@
   },
   {
     "branch_id": "B_CMN_MPER_APL",
-    "branch_title": "iPhone / iPad端末の Safari の場合",
+    "branch_title": "・iPhone / iPad端末の Safari ,,,",
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_CMN_MIC_PER_APL",
@@ -851,7 +871,7 @@
   },
   {
     "branch_id": "B_CMN_MPER_ADR",
-    "branch_title": "Android端末の Chrome の場合",
+    "branch_title": "・Android端末の Chrome の場合,,,",
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_CMN_MIC_PER_ADR",
@@ -860,8 +880,18 @@
     "referenced_branch_ids": ["B_CMN_MPER_ADR"]
   },
   {
+    "branch_id": "B_CMN_MPER_MAC",
+    "branch_title": "・Mac（マッキントッシュ）の場合,,,",
+    "child_order": null,
+    "child_type": "LEAF",
+    "child_id": "L_CMN_MIC_PER_MAC",
+    "display_title": "MacのSafariでマイクが,,,",
+    "body_format": "normal",
+    "referenced_branch_ids": ["B_CMN_MPER_MAC"]
+  },
+  {
     "branch_id": "B_CMN_MPER_WIN",
-    "branch_title": "Windows端末の Chrome / Edge",
+    "branch_title": "・Windows端末の Chrome / Edge,,,",
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_CMN_MIC_PER_WIN",
@@ -871,7 +901,7 @@
   },
   {
     "branch_id": "B_CMN_MPER_AI",
-    "branch_title": "（マイク）解決方法をＡＩで調べる",
+    "branch_title": "（マイク）解決方法をＡＩで調べる,,,",
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_CMN_MPER_AI",
@@ -990,6 +1020,16 @@
     "referenced_branch_ids": ["B_SETTING_LICENSE"]
   },
   {
+    "branch_id": "B_SETTING_LICENSE",
+    "branch_title": "設定・ライセンス画面,,,",
+    "child_order": null,
+    "child_type": "BRANCH",
+    "child_id": "B_OPTION_DEMO",
+    "display_title": "体験機モードをオンオフする",
+    "body_format": "normal",
+    "referenced_branch_ids": ["B_SETTING_LICENSE"]
+  },
+  {
     "branch_id": "B_OPTION_MANUAL",
     "branch_title": "音声登録を使用しない（手動登録をする）",
     "child_order": null,
@@ -998,6 +1038,16 @@
     "display_title": "・「音声登録を使用しない（手動,,,",
     "body_format": "normal",
     "referenced_branch_ids": ["B_OPTION_MANUAL"]
+  },
+  {
+    "branch_id": "B_OPTION_DEMO",
+    "branch_title": "音声登録を使用しない（手動登録をする）",
+    "child_order": null,
+    "child_type": "LEAF",
+    "child_id": "L_OPTION_DEMO1",
+    "display_title": "・「デモボタンを表示する」の設,,,",
+    "body_format": "normal",
+    "referenced_branch_ids": ["B_OPTION_DEMO"]
   },
   {
     "branch_id": "B_OPTION_TIME",
@@ -1235,7 +1285,7 @@
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_COMMON_MIC_PERMISSION",
-    "display_title": "・ブラウザでマイクを使うには、,,,",
+    "display_title": "・パンセノートはWebサイト上,,,",
     "body_format": "normal",
     "referenced_branch_ids": ["B_COMMON_MIC_PERMISSION", "B_FAQ_VOICE", "B_MAIN_VOICE_REGISTER", "B_MAIN_VOICE_SEARCH"]
   },
@@ -1255,7 +1305,7 @@
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_COMMON_MIC_PERMISSION",
-    "display_title": "・ブラウザでマイクを使うには、,,,",
+    "display_title": "・パンセノートはWebサイト上,,,",
     "body_format": "normal",
     "referenced_branch_ids": ["B_COMMON_MIC_PERMISSION", "B_FAQ_VOICE", "B_MAIN_VOICE_REGISTER", "B_MAIN_VOICE_SEARCH"]
   },
@@ -1425,7 +1475,7 @@
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_COMMON_SECURITY_WARNING",
-    "display_title": "・パンセノートでお客様が登録さ,,,",
+    "display_title": "・パンセノートには、ID、パス,,,",
     "body_format": "warning",
     "referenced_branch_ids": ["B_IDPW_CAUTION", "B_FAQ_STORAGE", "B_MSG_IMPORTANT", "B_MSG_ROW_TAP"]
   },
@@ -1475,7 +1525,7 @@
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_COMMON_SECURITY_WARNING",
-    "display_title": "・パンセノートでお客様が登録さ,,,",
+    "display_title": "・パンセノートには、ID、パス,,,",
     "body_format": "warning",
     "referenced_branch_ids": ["B_IDPW_CAUTION", "B_FAQ_STORAGE", "B_MSG_IMPORTANT", "B_MSG_ROW_TAP"]
   },
@@ -1625,7 +1675,7 @@
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_FEATURE_PHOTO_01",
-    "display_title": "・写真の登録は、新規にデータを,,,",
+    "display_title": "・音声登録（または手動）した時,,,",
     "body_format": "normal",
     "referenced_branch_ids": ["B_FEATURE_PHOTO", "B_PHOTO_CAUTION"]
   },
