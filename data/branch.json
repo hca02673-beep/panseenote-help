@@ -401,7 +401,7 @@
   },
   {
     "branch_id": "B_FAQ",
-    "branch_title": "よくある質問",
+    "branch_title": "よくある質問,,,",
     "child_order": null,
     "child_type": "BRANCH",
     "child_id": "B_FAQ_SYNC",
@@ -411,7 +411,17 @@
   },
   {
     "branch_id": "B_FAQ",
-    "branch_title": "よくある質問",
+    "branch_title": "よくある質問,,,",
+    "child_order": null,
+    "child_type": "BRANCH",
+    "child_id": "B_FAQ_DEMO",
+    "display_title": "デモ機のまま使い続けられますか",
+    "body_format": "normal",
+    "referenced_branch_ids": ["B_FAQ"]
+  },
+  {
+    "branch_id": "B_FAQ",
+    "branch_title": "よくある質問,,,",
     "child_order": null,
     "child_type": "BRANCH",
     "child_id": "B_FAQ_OFFLINE",
@@ -421,7 +431,7 @@
   },
   {
     "branch_id": "B_FAQ",
-    "branch_title": "よくある質問",
+    "branch_title": "よくある質問,,,",
     "child_order": null,
     "child_type": "BRANCH",
     "child_id": "B_FAQ_VOICE",
@@ -431,13 +441,23 @@
   },
   {
     "branch_id": "B_FAQ",
-    "branch_title": "よくある質問",
+    "branch_title": "よくある質問,,,",
     "child_order": null,
     "child_type": "BRANCH",
     "child_id": "B_FAQ_STORAGE",
     "display_title": "データの保存場所",
     "body_format": "normal",
     "referenced_branch_ids": ["B_FAQ"]
+  },
+  {
+    "branch_id": "B_FAQ_DEMO",
+    "branch_title": "デモ機のまま使い続けられますか,,,",
+    "child_order": null,
+    "child_type": "LEAF",
+    "child_id": "L_DEMO_01",
+    "display_title": "・体験機（デモ機）は、パンセノ,,,",
+    "body_format": "normal",
+    "referenced_branch_ids": ["B_FAQ_DEMO", "B_DEMO"]
   },
   {
     "branch_id": "（未決定）",
@@ -564,10 +584,30 @@
     "branch_title": "パンセノートの基本情報,,,",
     "child_order": null,
     "child_type": "BRANCH",
+    "child_id": "B_DEMO",
+    "display_title": "体験機（デモ機）",
+    "body_format": "normal",
+    "referenced_branch_ids": ["B_APP_OVERVIEW"]
+  },
+  {
+    "branch_id": "B_APP_OVERVIEW",
+    "branch_title": "パンセノートの基本情報,,,",
+    "child_order": null,
+    "child_type": "BRANCH",
     "child_id": "B_ENV",
     "display_title": "利用環境の目安",
     "body_format": "normal",
     "referenced_branch_ids": ["B_APP_OVERVIEW"]
+  },
+  {
+    "branch_id": "B_DEMO",
+    "branch_title": "体験機（デモ機）,,,",
+    "child_order": null,
+    "child_type": "LEAF",
+    "child_id": "L_DEMO_01",
+    "display_title": "・体験機（デモ機）は、パンセノ,,,",
+    "body_format": "normal",
+    "referenced_branch_ids": ["B_FAQ_DEMO", "B_DEMO"]
   },
   {
     "branch_id": "B_MAIN_RESTORE",
