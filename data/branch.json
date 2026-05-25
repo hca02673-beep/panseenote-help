@@ -295,7 +295,7 @@
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_FEATURE_PHOTO_01",
-    "display_title": "・音声登録（または手動）した時,,,",
+    "display_title": "・音声登録あるいは手動登録で新,,,",
     "body_format": "normal",
     "referenced_branch_ids": ["B_FEATURE_PHOTO", "B_PHOTO_CAUTION"]
   },
@@ -354,10 +354,10 @@
     "branch_title": "ライセンス認証による利用上限の変更",
     "child_order": null,
     "child_type": "LEAF",
-    "child_id": "L_FEATURE_LICENSE_01",
-    "display_title": "・プランアップを行うと、新しい,,,",
+    "child_id": "L_LISSENSE_FLOW",
+    "display_title": "【基本のライセンス認証のフロー,,,",
     "body_format": "normal",
-    "referenced_branch_ids": ["B_FEATURE_LICENSE"]
+    "referenced_branch_ids": ["B_FEATURE_LICENSE", "B_LICENSE01"]
   },
   {
     "branch_id": "B_BACKUP",
@@ -497,7 +497,7 @@
     "child_id": "L_DEMO_01",
     "display_title": "・体験機（デモ機）は、パンセノ,,,",
     "body_format": "normal",
-    "referenced_branch_ids": ["B_FAQ_DEMO", "B_DEMO"]
+    "referenced_branch_ids": ["B_FAQ_DEMO", "B_DEMO", "B_OPTION_DEMO"]
   },
   {
     "branch_id": "（未決定）",
@@ -594,6 +594,16 @@
     "branch_title": "パンセノートの基本情報,,,",
     "child_order": null,
     "child_type": "BRANCH",
+    "child_id": "B_FEATURE_AI",
+    "display_title": "AIで調べる",
+    "body_format": "normal",
+    "referenced_branch_ids": ["B_APP_OVERVIEW"]
+  },
+  {
+    "branch_id": "B_APP_OVERVIEW",
+    "branch_title": "パンセノートの基本情報,,,",
+    "child_order": null,
+    "child_type": "BRANCH",
     "child_id": "B_NOTE_VOICE",
     "display_title": "音声認識（音声検索・音声登録）",
     "body_format": "normal",
@@ -647,7 +657,17 @@
     "child_id": "L_DEMO_01",
     "display_title": "・体験機（デモ機）は、パンセノ,,,",
     "body_format": "normal",
-    "referenced_branch_ids": ["B_FAQ_DEMO", "B_DEMO"]
+    "referenced_branch_ids": ["B_FAQ_DEMO", "B_DEMO", "B_OPTION_DEMO"]
+  },
+  {
+    "branch_id": "B_FEATURE_AI",
+    "branch_title": "AIで調べる,,,",
+    "child_order": null,
+    "child_type": "LEAF",
+    "child_id": "L_AI_01",
+    "display_title": "・AIで調べるボタンを押すと、,,,",
+    "body_format": "normal",
+    "referenced_branch_ids": ["B_FEATURE_AI"]
   },
   {
     "branch_id": "B_MAIN_RESTORE",
@@ -1047,7 +1067,7 @@
     "child_id": "L_LISSENSE_FLOW",
     "display_title": "【基本のライセンス認証のフロー,,,",
     "body_format": "normal",
-    "referenced_branch_ids": ["B_LICENSE01"]
+    "referenced_branch_ids": ["B_FEATURE_LICENSE", "B_LICENSE01"]
   },
   {
     "branch_id": "B_SETTING_LICENSE",
@@ -1088,6 +1108,16 @@
     "display_title": "・「デモボタンを表示する」の設,,,",
     "body_format": "normal",
     "referenced_branch_ids": ["B_OPTION_DEMO"]
+  },
+  {
+    "branch_id": "B_OPTION_DEMO",
+    "branch_title": "音声登録を使用しない（手動登録をする）",
+    "child_order": null,
+    "child_type": "LEAF",
+    "child_id": "L_DEMO_01",
+    "display_title": "・体験機（デモ機）は、パンセノ,,,",
+    "body_format": "normal",
+    "referenced_branch_ids": ["B_FAQ_DEMO", "B_DEMO", "B_OPTION_DEMO"]
   },
   {
     "branch_id": "B_OPTION_TIME",
@@ -1715,7 +1745,7 @@
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_FEATURE_PHOTO_01",
-    "display_title": "・音声登録（または手動）した時,,,",
+    "display_title": "・音声登録あるいは手動登録で新,,,",
     "body_format": "normal",
     "referenced_branch_ids": ["B_FEATURE_PHOTO", "B_PHOTO_CAUTION"]
   },
