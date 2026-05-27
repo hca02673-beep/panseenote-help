@@ -15,7 +15,7 @@
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_ADDRESS",
-    "display_title": "▶ 商品案内ページ（プランアッ,,,",
+    "display_title": "▶ パンセノートのアドレス（パ,,,",
     "body_format": "normal",
     "referenced_branch_ids": ["ROOT"]
   },
@@ -45,7 +45,7 @@
     "child_order": null,
     "child_type": "BRANCH",
     "child_id": "B_REGISTER",
-    "display_title": "音声登録（手動登録）",
+    "display_title": "音声登録（手動登録）機能",
     "body_format": "normal",
     "referenced_branch_ids": ["ROOT"]
   },
@@ -55,7 +55,7 @@
     "child_order": null,
     "child_type": "BRANCH",
     "child_id": "B_SEARCH",
-    "display_title": "音声検索（手動検索）",
+    "display_title": "音声検索（手動検索）機能",
     "body_format": "normal",
     "referenced_branch_ids": ["ROOT"]
   },
@@ -65,7 +65,7 @@
     "child_order": null,
     "child_type": "BRANCH",
     "child_id": "B_PHOTO",
-    "display_title": "写真登録",
+    "display_title": "写真登録 機能",
     "body_format": "normal",
     "referenced_branch_ids": ["ROOT"]
   },
@@ -75,7 +75,7 @@
     "child_order": null,
     "child_type": "BRANCH",
     "child_id": "B_BACKUP",
-    "display_title": "データファイル保存・読み出し（バックアップ）",
+    "display_title": "データファイル保存・読み出し（バックアップ）機能",
     "body_format": "normal",
     "referenced_branch_ids": ["ROOT"]
   },
@@ -301,7 +301,7 @@
   },
   {
     "branch_id": "B_FEATURE_SEARCH",
-    "branch_title": "音声検索（手動検索）",
+    "branch_title": "検索（音声・手動）方法",
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_FEATURE_SEARCH_01",
@@ -351,11 +351,11 @@
   },
   {
     "branch_id": "B_FEATURE_LICENSE",
-    "branch_title": "ライセンス認証による利用上限の変更",
+    "branch_title": "ライセンス認証（プランアップ）による利用上限の変更",
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_LISSENSE_FLOW",
-    "display_title": "【基本のライセンス認証のフロー,,,",
+    "display_title": "１．設定・ライセンス画面を表示,,,",
     "body_format": "normal",
     "referenced_branch_ids": ["B_FEATURE_LICENSE", "B_LICENSE01"]
   },
@@ -371,7 +371,7 @@
   },
   {
     "branch_id": "B_BACKUP",
-    "branch_title": "バックアップと復元",
+    "branch_title": "データファイル保存・読み出し（バックアップ）機能",
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_BACKUP_SAVE_01",
@@ -381,7 +381,7 @@
   },
   {
     "branch_id": "B_BACKUP",
-    "branch_title": "バックアップと復元",
+    "branch_title": "データファイル保存・読み出し（バックアップ）機能",
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_BACKUP_RESTORE_01",
@@ -391,7 +391,7 @@
   },
   {
     "branch_id": "B_BACKUP",
-    "branch_title": "バックアップと復元",
+    "branch_title": "データファイル保存・読み出し（バックアップ）機能",
     "child_order": null,
     "child_type": "BRANCH",
     "child_id": "B_BACKUP_CAUTION",
@@ -595,7 +595,7 @@
     "child_order": null,
     "child_type": "BRANCH",
     "child_id": "B_FEATURE_SEARCH",
-    "display_title": "検索（音声・手動）",
+    "display_title": "検索（音声・手動）方法",
     "body_format": "normal",
     "referenced_branch_ids": ["B_APP_OVERVIEW"]
   },
@@ -635,7 +635,7 @@
     "child_order": null,
     "child_type": "BRANCH",
     "child_id": "B_FEATURE_LICENSE",
-    "display_title": "ライセンス認証による利用上限の変更",
+    "display_title": "ライセンス認証（プランアップ）による利用上限の変更",
     "body_format": "normal",
     "referenced_branch_ids": ["B_APP_OVERVIEW"]
   },
@@ -645,7 +645,7 @@
     "child_order": null,
     "child_type": "BRANCH",
     "child_id": "B_DEMO",
-    "display_title": "体験機（デモ機）",
+    "display_title": "体験機（デモ機）の基本機能",
     "body_format": "normal",
     "referenced_branch_ids": ["B_APP_OVERVIEW"]
   },
@@ -661,7 +661,7 @@
   },
   {
     "branch_id": "B_DEMO",
-    "branch_title": "体験機（デモ機）,,,",
+    "branch_title": "体験機（デモ機）の基本機能",
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_DEMO_01",
@@ -985,7 +985,7 @@
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_FIRST_FLOW_01",
-    "display_title": "【基本の使い方のフロー】\n1.,,,",
+    "display_title": "1. アプリを開く\n2. 必要,,,",
     "body_format": "normal",
     "referenced_branch_ids": ["B_FIRST_FLOW"]
   },
@@ -1075,7 +1075,7 @@
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_LISSENSE_FLOW",
-    "display_title": "【基本のライセンス認証のフロー,,,",
+    "display_title": "１．設定・ライセンス画面を表示,,,",
     "body_format": "normal",
     "referenced_branch_ids": ["B_FEATURE_LICENSE", "B_LICENSE01"]
   },
@@ -1671,17 +1671,17 @@
   },
   {
     "branch_id": "B_REGISTER",
-    "branch_title": "音声登録（手動登録）,,,",
+    "branch_title": "音声登録（手動登録）機能",
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_REGISTER_VOICE_01",
-    "display_title": "【基本のデータ登録のフロー】\n,,,",
+    "display_title": "1. 音声登録ボタンを押す\n2,,,",
     "body_format": "normal",
     "referenced_branch_ids": ["B_REGISTER"]
   },
   {
     "branch_id": "B_REGISTER",
-    "branch_title": "音声登録（手動登録）,,,",
+    "branch_title": "音声登録（手動登録）機能",
     "child_order": null,
     "child_type": "BRANCH",
     "child_id": "B_REGISTER_MANUAL",
@@ -1691,7 +1691,7 @@
   },
   {
     "branch_id": "B_REGISTER",
-    "branch_title": "音声登録（手動登録）,,,",
+    "branch_title": "音声登録（手動登録）機能",
     "child_order": null,
     "child_type": "BRANCH",
     "child_id": "B_REGISTER_CAUTION",
@@ -1701,17 +1701,17 @@
   },
   {
     "branch_id": "B_SEARCH",
-    "branch_title": "音声検索（手動検索）,,,",
+    "branch_title": "音声検索（手動検索）機能",
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_SEARCH_VOICE_01",
-    "display_title": "【基本のデータ検索フロー】\n1,,,",
+    "display_title": "1. 音声検索ボタンを押す\n2,,,",
     "body_format": "normal",
     "referenced_branch_ids": ["B_SEARCH"]
   },
   {
     "branch_id": "B_SEARCH",
-    "branch_title": "音声検索（手動検索）,,,",
+    "branch_title": "音声検索（手動検索）機能",
     "child_order": null,
     "child_type": "BRANCH",
     "child_id": "B_SEARCH_MANUAL",
@@ -1721,7 +1721,7 @@
   },
   {
     "branch_id": "B_SEARCH",
-    "branch_title": "音声検索（手動検索）,,,",
+    "branch_title": "音声検索（手動検索）機能",
     "child_order": null,
     "child_type": "BRANCH",
     "child_id": "B_COMMON_MIC_PERMISSION",
@@ -1731,17 +1731,17 @@
   },
   {
     "branch_id": "B_PHOTO",
-    "branch_title": "写真登録,,,",
+    "branch_title": "写真登録 機能",
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_REGISTER_PHOTO_01",
-    "display_title": "【基本の写真登録のフロー】\n1,,,",
+    "display_title": "1. 新規データ登録の際に表示,,,",
     "body_format": "normal",
     "referenced_branch_ids": ["B_PHOTO"]
   },
   {
     "branch_id": "B_PHOTO",
-    "branch_title": "写真登録,,,",
+    "branch_title": "写真登録 機能",
     "child_order": null,
     "child_type": "BRANCH",
     "child_id": "B_PHOTO_CAUTION",
@@ -1781,7 +1781,7 @@
   },
   {
     "branch_id": "B_REGISTER",
-    "branch_title": "音声登録（手動登録）,,,",
+    "branch_title": "音声登録（手動登録）機能",
     "child_order": null,
     "child_type": "BRANCH",
     "child_id": "B_COMMON_MIC_PERMISSION",
@@ -1835,7 +1835,7 @@
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_SEARCH_MANUAL_01",
-    "display_title": "【基本の手動検索フロー】\n1.,,,",
+    "display_title": "1. 検索欄にキーワード（検索,,,",
     "body_format": "normal",
     "referenced_branch_ids": ["B_SEARCH_MANUAL"]
   },
