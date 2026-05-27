@@ -15,7 +15,7 @@
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_ADDRESS",
-    "display_title": "▶ パンセノートのアドレス（パ,,,",
+    "display_title": "▶ 商品案内ページ（プランアッ,,,",
     "body_format": "normal",
     "referenced_branch_ids": ["ROOT"]
   },
@@ -205,7 +205,7 @@
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_IDPW_INDEX_01",
-    "display_title": "・ ID・パスワードはあなたの,,,",
+    "display_title": "・ ID・パスワードは、あなた,,,",
     "body_format": "normal",
     "referenced_branch_ids": ["B_IDPW_INDEX"]
   },
@@ -358,6 +358,16 @@
     "display_title": "【基本のライセンス認証のフロー,,,",
     "body_format": "normal",
     "referenced_branch_ids": ["B_FEATURE_LICENSE", "B_LICENSE01"]
+  },
+  {
+    "branch_id": "B_FEATURE_PHOTO",
+    "branch_title": "写真データ",
+    "child_order": null,
+    "child_type": "LEAF",
+    "child_id": "L_FEATURE_PHOTO_02",
+    "display_title": "・パンセノートに登録された写真,,,",
+    "body_format": "normal",
+    "referenced_branch_ids": ["B_FEATURE_PHOTO"]
   },
   {
     "branch_id": "B_BACKUP",
