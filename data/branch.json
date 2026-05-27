@@ -445,17 +445,17 @@
     "child_order": null,
     "child_type": "BRANCH",
     "child_id": "B_FAQ_FRGTLK",
-    "display_title": "ライセンスキーの再発行",
+    "display_title": "ライセンスキーの保管",
     "body_format": "normal",
     "referenced_branch_ids": ["B_FAQ"]
   },
   {
     "branch_id": "B_FAQ_FRGTLK",
-    "branch_title": "ライセンスキーの再発行,,,",
+    "branch_title": "ライセンスキーの保管",
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_FAQ_FRGTLK_01",
-    "display_title": "・ライセンスキーは、発行を受け,,,",
+    "display_title": "・ライセンスキーの発行を受けた,,,",
     "body_format": "normal",
     "referenced_branch_ids": ["B_FAQ_FRGTLK"]
   },
