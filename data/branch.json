@@ -444,6 +444,26 @@
     "branch_title": "よくある質問,,,",
     "child_order": null,
     "child_type": "BRANCH",
+    "child_id": "B_FAQ_MAIL",
+    "display_title": "メールアドレスの変更",
+    "body_format": "normal",
+    "referenced_branch_ids": ["B_FAQ"]
+  },
+  {
+    "branch_id": "B_FAQ_MAIL",
+    "branch_title": "メールアドレスの変更,,,",
+    "child_order": null,
+    "child_type": "LEAF",
+    "child_id": "L_FAQ_MAIL_01",
+    "display_title": "・登録メールアドレスを変更する,,,",
+    "body_format": "normal",
+    "referenced_branch_ids": ["B_FAQ_MAIL"]
+  },
+  {
+    "branch_id": "B_FAQ",
+    "branch_title": "よくある質問,,,",
+    "child_order": null,
+    "child_type": "BRANCH",
     "child_id": "B_FAQ_FRGTLK",
     "display_title": "ライセンスキーの保管",
     "body_format": "normal",
@@ -1205,7 +1225,7 @@
     "child_order": null,
     "child_type": "BRANCH",
     "child_id": "B_OPTION_DIAG",
-    "display_title": "内部情報・診断",
+    "display_title": "内部情報・メンテナンス",
     "body_format": "normal",
     "referenced_branch_ids": ["B_SETTING_LICENSE"]
   },
@@ -1221,11 +1241,11 @@
   },
   {
     "branch_id": "B_OPTION_DIAG",
-    "branch_title": "内部情報・診断",
+    "branch_title": "内部情報・メンテナンス",
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_OPTION_DIAG1",
-    "display_title": "内部情報が表示されます（開発者,,,",
+    "display_title": "・メールアドレスの変更が行えま,,,",
     "body_format": "normal",
     "referenced_branch_ids": ["B_OPTION_DIAG"]
   },
