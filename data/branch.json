@@ -444,6 +444,26 @@
     "branch_title": "よくある質問,,,",
     "child_order": null,
     "child_type": "BRANCH",
+    "child_id": "B_FAQ_MAILTR",
+    "display_title": "メールが届かない場合",
+    "body_format": "normal",
+    "referenced_branch_ids": ["B_FAQ", "B_LICENSE01"]
+  },
+  {
+    "branch_id": "B_FAQ_MAILTR",
+    "branch_title": "メールが届かない場合",
+    "child_order": null,
+    "child_type": "LEAF",
+    "child_id": "L_FAQ_MAIL_02",
+    "display_title": "・当社からのメールが届かない場,,,",
+    "body_format": "normal",
+    "referenced_branch_ids": ["B_FAQ_MAILTR"]
+  },
+  {
+    "branch_id": "B_FAQ",
+    "branch_title": "よくある質問,,,",
+    "child_order": null,
+    "child_type": "BRANCH",
     "child_id": "B_FAQ_MAIL",
     "display_title": "メールアドレスの変更",
     "body_format": "normal",
@@ -1098,6 +1118,16 @@
     "display_title": "１．設定・ライセンス画面を表示,,,",
     "body_format": "normal",
     "referenced_branch_ids": ["B_FEATURE_LICENSE", "B_LICENSE01"]
+  },
+  {
+    "branch_id": "B_LICENSE01",
+    "branch_title": "ライセンス認証",
+    "child_order": null,
+    "child_type": "BRANCH",
+    "child_id": "B_FAQ_MAILTR",
+    "display_title": "メールが届かない場合",
+    "body_format": "normal",
+    "referenced_branch_ids": ["B_FAQ", "B_LICENSE01"]
   },
   {
     "branch_id": "B_SETTING_LICENSE",
