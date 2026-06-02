@@ -2,12 +2,12 @@
   {
     "leaf_id": "L_ADDRESS",
     "leaf_title": "アドレス",
-    "body": "▶ パンセノートのアドレス（パンセノートが立ち上がります）\nhttps://keisuikai-mp.github.io/panseenote/\n▶ 体験版のアドレス（パンセノートがサンプルデータ入りで立ち上がります）\nhttps://keisuikai-mp.github.io/panseenote/?demo=1\n▶ 商品案内ページ（プランアップはアプリ内のプランアップボタンから行ってください）\nhttps://keisuikai-mp.github.io/panseenote-lp/",
+    "body": "【パンセノートのアドレス（パンセノートが立ち上がります）】\nhttps://keisuikai-mp.github.io/panseenote/\n【体験版のアドレス（パンセノートがサンプルデータ入りで立ち上がります）】\nhttps://keisuikai-mp.github.io/panseenote/?demo=1\n【商品案内ページ（料金・プランのご案内）】\nhttps://keisuikai-mp.github.io/panseenote-lp/\n　　＜注意：プランアップはアプリ内のプランアップボタンから行ってください＞\n【取扱説明書・ヘルプページ（このページです）】\nhttps://keisuikai-mp.github.io/panseenote-help/",
     "referenced_branch_ids": ["ROOT"]
   },
   {
     "leaf_id": "L_FIRST_FLOW_01",
-    "leaf_title": "【基本の使い方のフロー】",
+    "leaf_title": "【基本の使い方】",
     "body": "1. アプリを開く\n2. 必要に応じてライセンス認証を行う\n3. データを登録をする\n4. データを検索する\n5. 必要に応じて修正・削除・バックアップを行う",
     "referenced_branch_ids": ["B_FIRST_FLOW"]
   },
@@ -21,13 +21,13 @@
     "leaf_id": "L_COMMON_SECURITY_WARNING",
     "leaf_title": "重要情報・個人情報を登録しない",
     "body": "・パンセノートには、ID、パスワード、個人情報、重要情報など、漏洩すると問題となる情報は決して登録しないでください。その様な情報は、お手元の手帳やノートなどに記録して、パンセノートにはどこに何を書いたかだけを登録してください。\n・お客様が登録されたデータは、お使いのブラウザ内のデータとして保存されていますが、サーバー上にも外部ファイルとしても保管されていませんので、万一の登録データ消失に備えて、定期的にデータファイル保存操作で外部（バックアップ）ファイルとして保存してください。\n・パンセノートに記録したデータが、漏洩したり消失したりすることによって、万一、お客様が損失を被られた場合でも、当社は損害賠償等一切の責任を負うことができません。",
-    "referenced_branch_ids": ["B_IDPW_CAUTION", "B_FAQ_STORAGE", "B_MSG_IMPORTANT", "B_MSG_ROW_TAP"]
+    "referenced_branch_ids": ["B_IDPW_CAUTION", "B_FAQ_STORAGE"]
   },
   {
     "leaf_id": "L_COMMON_MIC_PERMISSION",
     "leaf_title": "マイク使用許可",
     "body": "・パンセノートはWebサイト上で動作するWebアプリですので、音声検索・音声登録を利用する為には、マイクの使用許可が必要です。\n・初回立ち上げ時に、マイクの許可画面が表示されなかった場合には、ブラウザの設定画面で、パンセノート（Webサイト）に対するマイクの使用許可がされているかをご確認ください。\n・なお、音声認識が使えない場合でも、手動検索・手動登録は利用できます。",
-    "referenced_branch_ids": ["B_COMMON_MIC_PERMISSION", "B_FAQ_VOICE", "B_MAIN_VOICE_REGISTER", "B_MAIN_VOICE_SEARCH"]
+    "referenced_branch_ids": ["B_COMMON_MIC_PERMISSION", "B_FAQ_VOICE"]
   },
   {
     "leaf_id": "L_CMN_MIC_PER_MAC",
@@ -69,18 +69,12 @@
     "leaf_id": "L_COMMON_LIMIT_WARNING",
     "leaf_title": "登録上限に関する注意",
     "body": "・ 登録件数が登録上限件数に達すると、新規のデータ登録は出来なくなります。\n・ データ検索画面でデータを消去して登録件数を減らすか、プランアップによる登録上限件数の引き上げをご検討ください。\n・ 現在登録されているデータは、プランアップしても引き継がれます。",
-    "referenced_branch_ids": ["B_MAIN_COUNT", "B_MSG_LIMIT", "B_MSG_RESTORE_LIMIT", "B_REGISTER_CAUTION"]
-  },
-  {
-    "leaf_id": "L_PURPOSE_01",
-    "leaf_title": "目的",
-    "body": "本書は、パンセノートの基本的な使い方、設定方法、注意点を利用者向けに整理するための原稿です。\n後日、本書の内容をもとに manual.html を作成し、GitHub Pages 上で閲覧できるようにする想定です。\n本ファイルは、内容推敲前のたたき台です。",
-    "referenced_branch_ids": ["B_PURPOSE"]
+    "referenced_branch_ids": ["B_REGISTER_CAUTION"]
   },
   {
     "leaf_id": "L_APP_SUMMARY1",
     "leaf_title": "パンセノートとは",
-    "body": "パンセノートは、お客様の Quality of Life 向上をお手伝いするために、ＡＩ時代に最適化して開発された、最新鋭/新感覚/新体験の「音声検索・登録アプリ」です。",
+    "body": "・パンセノートは、手帳やノートに書き留めたり、スマホやパソコンに記録した備忘メモを、後から音声検索ですぐに探せるWebアプリです。\n・ID・パスワードの記載場所、アプリや家庭機器の使い方や設定、レシピ、生活メモなどを、忘れる前に記録し、必要な時にすぐ見つけられます。",
     "referenced_branch_ids": ["ROOT"]
   },
   {
@@ -171,85 +165,7 @@
     "leaf_id": "L_TIMEOUT_01",
     "leaf_title": "音声認識のタイムアウト",
     "body": "音声認識には標準で10秒のタイムアウトが設定されています。タイムアウトまでに音声が認識できないと音声認識は終了します。タイムアウト時間は設定画面で変更できます。",
-    "referenced_branch_ids": ["B_MSG_TIMEOUT", "B_NOTE_VOICE"]
-  },
-  {
-    "leaf_id": "L_SCREEN_WIDTH_01",
-    "leaf_title": "PCモード・スマホモード",
-    "body": "▶ 画面の横幅によって、PCモードとスマホモードを判定しており、一部の動作が変わります。\n▶ 使用機器による判定ではなく、ブラウザの横幅で判定しています。\n▶ 検索結果一覧表示画面でのメモ欄の表示やデータ修正登録ならびにデータ削除の方法が、PCモードとスマホモードで異なります。",
-    "referenced_branch_ids": ["B_SCREEN_WIDTH"]
-  },
-  {
-    "leaf_id": "L_MAIN_VOICE_SEARCH_01",
-    "leaf_title": "音声検索ボタン",
-    "body": "利用には、アプリに対するブラウザのマイク使用許可が必要です。",
-    "referenced_branch_ids": ["B_MAIN_VOICE_SEARCH"]
-  },
-  {
-    "leaf_id": "L_MAIN_MANUAL_SEARCH_01",
-    "leaf_title": "手動検索欄",
-    "body": "検索語を入力して、手動で検索できます。",
-    "referenced_branch_ids": ["B_MAIN_MANUAL_SEARCH"]
-  },
-  {
-    "leaf_id": "L_MAIN_RESULT_01",
-    "leaf_title": "検索結果一覧",
-    "body": "青色のメモボタンが表示されている場合、メモ登録あるいは写真登録があります。PCモードではメモボタンで行を拡張し、スマホモードではデータ行をタップするとデータ編集画面が表示されます。",
-    "referenced_branch_ids": ["B_MAIN_RESULT"]
-  },
-  {
-    "leaf_id": "L_MAIN_VOICE_REGISTER_01",
-    "leaf_title": "音声登録ボタン",
-    "body": "パンセノートに登録されるデータは、「サービス名」「ノート（冊）番号」「ページ番号」「メモ欄」「写真」の5つの情報で構成され、登録画面で登録します。",
-    "referenced_branch_ids": ["B_MAIN_VOICE_REGISTER"]
-  },
-  {
-    "leaf_id": "L_MAIN_SAVE_01",
-    "leaf_title": "データファイル保存ボタン",
-    "body": "パンセノートの登録データは、お使いのブラウザ内のデータとして記録されています。定期的に外部ファイルにバックアップされることをお勧めいたします。",
-    "referenced_branch_ids": ["B_MAIN_SAVE"]
-  },
-  {
-    "leaf_id": "L_MAIN_RESTORE_01",
-    "leaf_title": "データファイル読み出しボタン",
-    "body": "データファイルからデータを読み出すと、読み出す前にブラウザに登録されていたデータは消去されます（上書きされます）。",
-    "referenced_branch_ids": ["B_MAIN_RESTORE"]
-  },
-  {
-    "leaf_id": "L_MAIN_COUNT_01",
-    "leaf_title": "登録件数 / 登録上限件数表示",
-    "body": "登録件数が登録上限件数に達すると、新規のデータ登録は出来なくなります。",
-    "referenced_branch_ids": ["B_MAIN_COUNT"]
-  },
-  {
-    "leaf_id": "L_MAIN_SETTING_01",
-    "leaf_title": "設定・ライセンス画面ボタン",
-    "body": "ライセンス認証、設定変更、取扱説明書への遷移などを行う画面を開きます。",
-    "referenced_branch_ids": ["B_MAIN_SETTING"]
-  },
-  {
-    "leaf_id": "L_SEARCH_TOO_MANY",
-    "leaf_title": "検索結果が多すぎる場合",
-    "body": "▶ 検索結果が多すぎる場合には、検索語を長くしてください。",
-    "referenced_branch_ids": ["B_MSG_TOO_MANY"]
-  },
-  {
-    "leaf_id": "L_LICENSE_ONLINE_01",
-    "leaf_title": "初回認証はオンライン",
-    "body": "▶ 初回ライセンス認証はオンライン環境で行ってください。\n▶ 通信環境が不安定な場合は、認証に失敗することがあります。",
-    "referenced_branch_ids": ["B_MSG_A08"]
-  },
-  {
-    "leaf_id": "L_PHOTO_SAVE_01",
-    "leaf_title": "写真保存時の注意",
-    "body": "▶ 写真は、新規でデータ登録を行う画面で、一つの登録データに一枚だけ登録できます。\n▶ データ登録画面で写真を選択しただけでは登録されず、保存ボタンを押すとデータの一部として登録されます。\n▶ 既に登録されている登録データに、後から写真を登録することは出来ません。",
-    "referenced_branch_ids": ["B_MSG_PHOTO_SAVE"]
-  },
-  {
-    "leaf_id": "L_PHOTO_LIMIT_01",
-    "leaf_title": "写真上限時の注意",
-    "body": "▶ 写真は、一つの登録データに一枚まで登録できますが、全体の登録上限枚数は2000枚です。\n▶ 登録データから写真だけ削除することはできません。写真が登録されているデータを削除してください。",
-    "referenced_branch_ids": ["B_MSG_PHOTO_LIMIT"]
+    "referenced_branch_ids": ["B_NOTE_VOICE"]
   },
   {
     "leaf_id": "L_REGISTER_PHOTO_01",
@@ -292,18 +208,6 @@
     "leaf_title": "AIで調べる",
     "body": "・AIで調べるボタンを押すと、Google AI検索（外部サービス）を利用して、AIによる詳細な回答が引き出されます。\n・AI検索には、パンセノートに登録されているデータと、ユーザーが追加で入力した調べたい事項を加えた情報が渡されます。",
     "referenced_branch_ids": ["B_FEATURE_AI"]
-  },
-  {
-    "leaf_id": "L_EDIT_01",
-    "leaf_title": "編集",
-    "body": "登録済みデータは一覧上で修正できます。修正後は保存操作を行います。保存時には確認ダイアログが表示されます。",
-    "referenced_branch_ids": ["B_EDIT"]
-  },
-  {
-    "leaf_id": "L_DELETE_01",
-    "leaf_title": "削除",
-    "body": "不要なデータは一覧上から削除できます。削除時には確認ダイアログが表示されます。削除されたデータを復活することは出来ません。",
-    "referenced_branch_ids": ["B_DELETE"]
   },
   {
     "leaf_id": "L_BACKUP_SAVE_01",
@@ -366,18 +270,6 @@
     "referenced_branch_ids": ["B_FAQ_FRGTLK"]
   },
   {
-    "leaf_id": "L_FUTURE_ITEMS_01",
-    "leaf_title": "未確定項目",
-    "body": "試用版・各プランの正式な登録件数上限\n写真機能の最終仕様表現\nデータファイル保存の利用者向け説明文\n設定・ライセンス画面の正式名称\n取扱説明書ボタンの正式ラベル\n問い合わせ先やサポート導線を記載するか\n改訂履歴を manual.html に載せるか",
-    "referenced_branch_ids": ["B_FUTURE_ITEMS"]
-  },
-  {
-    "leaf_id": "L_HTML_ITEMS_01",
-    "leaf_title": "HTML化メモ",
-    "body": "見出し階層は、このMarkdownの章立てを基本にします。HTML化時は、目次、ページ内リンク、戻るボタン、スマホ表示最適化を検討します。設定・ライセンス画面から manual.html へ遷移しやすいUIにします。",
-    "referenced_branch_ids": ["B_HTML_ITEMS"]
-  },
-  {
     "leaf_id": "L_SHARE",
     "leaf_title": "異なるスマホやPCでデータを共用する方法",
     "body": "・保存したデータファイル（バックアップファイル・外部ファイル）を、他の端末で読み出せば、他の端末との間で、登録データを共有することが出来ます。\n・設定・ライセンス画面にある「▶他の端末とデータを受け渡しする」ボタンでは、他端末とのデータの受け渡し方法をアシストできるようにご案内しています。",
@@ -404,7 +296,7 @@
   {
     "leaf_id": "L_FAQ_MAIL_01",
     "leaf_title": "メールアドレスの変更",
-    "body": "・登録メールアドレスを変更する場合は、設定ライセンス画面の、内部情報・メインテナンスの中の、メールアドレスの変更ボタンから行ってください。\n・ライセンスキーが分かっている場合で、登録メールアドレスが不明、あるいは、当該メールが利用できない場合には、下記窓口までご連絡ください。なお、対応にある程度の日数がかかる場合がありますことを予めご了承ください。\n【パンセノート連絡窓口】\npanseenote@keisuikai-mp.jp",
+    "body": "・登録メールアドレスを変更する場合は、設定ライセンス画面の、内部情報・メンテナンスの中の、メールアドレスの変更ボタンから行ってください。\n・ライセンスキーが分かっている場合で、登録メールアドレスが不明、あるいは、当該メールが利用できない場合には、下記窓口までご連絡ください。なお、対応にある程度の日数がかかる場合がありますことを予めご了承ください。\n【パンセノート連絡窓口】\npanseenote@keisuikai-mp.jp",
     "referenced_branch_ids": ["B_FAQ_MAIL"]
   },
   {

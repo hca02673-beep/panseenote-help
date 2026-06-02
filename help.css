@@ -101,6 +101,13 @@ a {
   line-height: 1.3;
 }
 
+.page-intro {
+  margin: 0.55rem 0 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.65;
+}
+
 .search-form {
   margin-top: 0.9rem;
 }
