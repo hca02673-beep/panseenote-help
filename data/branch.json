@@ -474,6 +474,26 @@
     "branch_title": "よくある質問（FAQ）",
     "child_order": null,
     "child_type": "BRANCH",
+    "child_id": "B_FAQ_RECEIPT",
+    "display_title": "領収書・請求書の発行",
+    "body_format": "normal",
+    "referenced_branch_ids": ["B_FAQ"]
+  },
+  {
+    "branch_id": "B_FAQ_RECEIPT",
+    "branch_title": "領収書・請求書の発行,,,",
+    "child_order": null,
+    "child_type": "LEAF",
+    "child_id": "L_FAQ_RECEIPT",
+    "display_title": "・パンセノートの決済はLemo,,,",
+    "body_format": "normal",
+    "referenced_branch_ids": ["B_FAQ_RECEIPT"]
+  },
+  {
+    "branch_id": "B_FAQ",
+    "branch_title": "よくある質問（FAQ）",
+    "child_order": null,
+    "child_type": "BRANCH",
     "child_id": "B_FAQ_FRGTLK",
     "display_title": "ライセンスキーを忘れた場合",
     "body_format": "normal",
