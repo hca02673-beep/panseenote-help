@@ -795,7 +795,7 @@
     "child_order": null,
     "child_type": "BRANCH",
     "child_id": "B_CMN_MPER_WIN",
-    "display_title": "・Windows端末の Chrome / Edge",
+    "display_title": "・Windows端末の Chrome",
     "body_format": "normal",
     "referenced_branch_ids": ["B_COMMON_MIC_PERMISSION", "B_FAQ_VOICE"]
   },
@@ -855,7 +855,7 @@
     "child_order": null,
     "child_type": "BRANCH",
     "child_id": "B_CMN_MPER_WIN",
-    "display_title": "Windows端末の Chrome / Edge",
+    "display_title": "Windows端末の Chrome",
     "body_format": "normal",
     "referenced_branch_ids": ["B_COMMON_MIC_PERMISSION", "B_FAQ_VOICE"]
   },
@@ -901,7 +901,7 @@
   },
   {
     "branch_id": "B_CMN_MPER_WIN",
-    "branch_title": "・Windows端末の Chrome / Edge,,,",
+    "branch_title": "・Windows端末の Chrome,,,",
     "child_order": null,
     "child_type": "LEAF",
     "child_id": "L_CMN_MIC_PER_WIN",
