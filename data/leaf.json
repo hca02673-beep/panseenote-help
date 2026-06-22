@@ -49,8 +49,8 @@
   },
   {
     "leaf_id": "L_CMN_MIC_PER_WIN",
-    "leaf_title": "Windows Chrome/Edge マイクの使用許可",
-    "body": "Windows端末の Chrome / Edge でマイクが使えない場合は、以下をご確認ください。\nWindowsのマイク許可：スタート → 設定 → プライバシーとセキュリティ → マイク\n以下をオンにする。\nマイク アクセス、アプリのマイクアクセス、デスクトップ アプリのマイクアクセス\nChromeのサイト設定：Chrome → 右上「︙」→ 設定 → プライバシーとセキュリティ → サイトの設定 → マイク → パンセノートのサイトを 許可\nEdgeのサイト設定：Edge → 右上「…」→ 設定 → Cookie とサイトのアクセス許可 → マイク → パンセノートのサイトを 許可\n機器側の確認：使用するマイクが正しく選択されているか確認\n開き直し：設定後、ブラウザでパンセノートを開き直し、音声ボタンを再度押す。",
+    "leaf_title": "Windows Chrome マイクの使用許可",
+    "body": "Windows端末の Chrome でマイクが使えない場合は、以下をご確認ください。\nWindowsのマイク許可：スタート → 設定 → プライバシーとセキュリティ → マイク\n以下をオンにする。\nマイク アクセス、アプリのマイクアクセス、デスクトップ アプリのマイクアクセス\nChromeのサイト設定：Chrome → 右上「︙」→ 設定 → プライバシーとセキュリティ → サイトの設定 → マイク → パンセノートのサイトを 許可\n機器側の確認：使用するマイクが正しく選択されているか確認\n開き直し：設定後、ブラウザでパンセノートを開き直し、音声ボタンを再度押す。",
     "referenced_branch_ids": ["B_CMN_MPER_WIN"]
   },
   {
@@ -146,7 +146,7 @@
   {
     "leaf_id": "L_ENV_01",
     "leaf_title": "利用環境の目安",
-    "body": "パンセノートは、次の環境でのご利用をお勧めしています。\n【利用環境】\n　端末 / OS　　　　：ブラウザ\n　iPhone・iPad・Mac： Safari\n　Android 端末　　　： Chrome\n　Windows　　　　 ： Chrome / Edge\n（動作を完全に保証するものではありません）",
+    "body": "パンセノートは、次の環境でのご利用をお勧めしています。\n【利用環境】\n　端末 / OS　　　　：ブラウザ\n　iPhone・iPad・Mac： Safari\n　Android 端末　　　： Chrome\n　Windows　　　　 ： Chrome\n（動作を完全に保証するものではありません）",
     "referenced_branch_ids": ["B_ENV"]
   },
   {
